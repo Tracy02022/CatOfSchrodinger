@@ -25,7 +25,7 @@ Else
        (BACKTRACK) and return false.
 */
 /*
-boolean return type if statement 条件判断成功即返回，不成功继续下面
+boolean return type if statement 条件判断成功即返回，不成功继续下面 different with other return type
 public class IFTest {
 	public static boolean iFTest(int x) {
 		if (x + 1 == 7) {
