@@ -1,1 +1,1 @@
-# Coding_Questions
+# Tech_Questions
