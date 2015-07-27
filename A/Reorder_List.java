@@ -1,3 +1,6 @@
+/*
+Reorder List e.g. 1-2-3-4-5-6 change to 1-2-3-6-5-4, 1-2-3-4-5 change to 1-2-5-4-3
+*/
 public class Reorder_List {
 	public static void reorder(ListNode head) {
 		if (head == null) {
