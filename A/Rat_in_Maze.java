@@ -84,6 +84,26 @@ public class IFTest {
 	}
 }
 // output: HelloUMassGood
+public class IFTest {
+	public static String iFTest(int x) {
+		String y = null;
+		if (x + 1 == 7) {
+			y = "Hello";
+		}
+		if (x - 1 == 5) {
+			y = "UMass";
+		}
+		if (x / 2 == 3) {
+			y = "Good";
+		}
+		return y;
+	}
+	
+	public static void main(String[] args) {
+		System.out.print(iFTest(6));
+	}
+}
+// output: Good
 */
 public class Rat_in_Maze {
 	
