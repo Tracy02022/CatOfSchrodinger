@@ -25,7 +25,8 @@ Else
        (BACKTRACK) and return false.
 */
 /*
-boolean return type if statement 条件判断成功即返回，不成功继续下面 different with other return type
+boolean return type if statement 条件判断成功即返回, 不成功继续下面 
+记住一个原则, 输出和return value不一样的, 所有函数有且仅有一个return, 输出System.out.print可以有很多的
 public class IFTest {
 	public static boolean iFTest(int x) {
 		if (x + 1 == 7) {
