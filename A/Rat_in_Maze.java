@@ -104,6 +104,26 @@ public class IFTest {
 	}
 }
 // output: Good
+public class IFTest {
+	public static boolean iFTest(int x) {
+		boolean flag = false;
+		if (x + 1 == 7) {
+			flag = false;
+		}
+		if (x - 1 == 5) {
+			flag = false;
+		}
+		if (x / 2 == 3) {
+			flag = true;
+		}
+		return flag;
+	}
+	
+	public static void main(String[] args) {
+		System.out.print(iFTest(6));
+	}
+}
+// output: true
 */
 public class Rat_in_Maze {
 	
