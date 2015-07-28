@@ -28,3 +28,7 @@ Write a function to insert a new value in a sorted Circular Linked List (CLL).
    (c) Change the next of the located pointer
          current->next = new_node; 
 */
+/*
+notice:
+if method has void return, it is hard to print out result in main function, e.g. get null pointer error
+*/
