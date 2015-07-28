@@ -37,3 +37,58 @@ if method has void return, it is hard to print out result in main function, e.g.
 可以写在一个类里
 可以static head
 */
+public class Sorted_Insert {
+	
+	public static CNode sortedInsert(CNode start, CNode new_node) {
+		CNode current = start;
+		
+		if (current == null) {
+			new_node.next = new_node;
+			start = new_node;
+	
+		} else if (current.val >= new_node.val) {
+			while (current.next != start) {
+				current = current.next;
+			}
+			current.next = new_node;
+			new_node.next = start;
+			start = new_node; 
+			
+		} else {
+			while (current.next != start && current.next.val < new_node.val) {
+				current = current.next;
+			}
+			new_node.next = current.next;
+			current.next = new_node;
+		}
+		return start;
+	}
+	
+	public static class CNode {
+		int val;
+		CNode next;
+		public CNode(int x) {
+			val = x;
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {12, 56, 2, 11, 1, 90};
+		
+		CNode start = null;
+		
+		for (int i = 0; i < 6; i++) {
+			CNode tmp = new CNode(arr[i]);
+			CNode rst = sortedInsert(start, tmp);
+			start = rst;
+		}
+
+		int cnt = 0;
+		while (cnt < 7) {
+			System.out.print(start.val + " ");
+			start = start.next;
+			cnt++;
+		}
+	}
+}
