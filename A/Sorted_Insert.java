@@ -30,6 +30,7 @@ Write a function to insert a new value in a sorted Circular Linked List (CLL).
 */
 /*
 notice:
+涉及Java的参数传递问题
 if method has void return, it is hard to print out result in main function, e.g. get null pointer error
 里面改了head指向 但外面的head仍然指向null
 可以返回 赋值
