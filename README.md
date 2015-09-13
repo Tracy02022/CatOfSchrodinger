@@ -1,1 +1,1 @@
-# tech_questions
+# Schrodinger's Cat
