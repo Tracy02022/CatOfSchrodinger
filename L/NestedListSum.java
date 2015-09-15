@@ -26,6 +26,7 @@ public interface NestedInteger {
 }
 
 // DFS
+// time O(N), space O(depth). ?
 public class NestedListSum {
 	// the algo
 	public static int depthSum (List<NestedInteger> inputList) {
