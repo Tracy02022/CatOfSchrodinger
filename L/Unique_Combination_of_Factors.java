@@ -12,7 +12,7 @@ Print all unique combinations of factors of a positive integer. For example give
 */
 // DFS
 // back tracking 
-// time O(2^N), space O(N). ?
+// time O(N!), space O(N). ?
 public class FactorsCombination {
 	
 	public static List<List<Integer>> factorCombinations(int n) {
